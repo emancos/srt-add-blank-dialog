@@ -40,7 +40,6 @@ const AppForm = (props) => {
           ...card,
         }
       })
-      setTotalProcess(0)
     }
   }
 
@@ -68,8 +67,7 @@ const AppForm = (props) => {
     })
   }*/
 
-  React.useEffect(() => {
-    
+  React.useEffect(() => {    
     window.api.receive('file-selected', (data) => {
       if (data.filePath) {
         dataInfo.current = { ...data }
@@ -107,6 +105,7 @@ const AppForm = (props) => {
       }
       if (dataInfo.current.totalDialogs) {
         setDisabledButton(false)
+        setTotalProcess(0)
       }
     })
     window.api.receive('srt-processing', (data) => {
