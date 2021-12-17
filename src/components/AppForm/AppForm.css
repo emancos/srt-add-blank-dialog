@@ -1,0 +1,95 @@
+.input-group {
+  color: white;
+  margin: 10px 0 0 0;
+}
+
+.form-control {
+  text-indent: 10px;
+}
+
+::-webkit-input-placeholder {
+  font-size: 16px;
+}
+
+:-moz-placeholder {
+  /* Firefox 18- */
+  font-size: 16px;
+}
+
+::-moz-placeholder {
+  /* Firefox 19+ */
+  font-size: 16px;
+}
+
+:-ms-input-placeholder {
+  font-size: 16px;
+}
+
+#srt-data {
+  height: 300px;
+  font-size: 16px;
+  color: white !important;
+}
+
+.form-floating label {
+  color: white !important;
+}
+
+.card {
+  border: darkgrey;
+  background-color: #171a20;
+  height: 300px;
+  font-size: 16px;
+  color: white !important;
+}
+
+#badge-info-file {
+  width: 100%;
+  margin-bottom: 0.9rem !important;
+  color: #171a20;
+  font-size: 14px !important;
+  overflow: hidden;  
+}
+
+#load-srt-button {
+  margin: 10px 0 10px 0;
+  width: 200px !important;
+}
+
+#show-subtitle {
+  margin-top: 2%;
+}
+
+.progress-bar {
+  color:#171a20;
+}
+
+.processing {
+  font-size: 14px;
+  font-weight: bold;
+}
+.finished {
+  font-size: 14px;
+  font-weight: bold;
+}
+.processing:after {
+  overflow: hidden;
+  display: inline-block;
+  vertical-align: bottom;
+  -webkit-animation: ellipsis steps(4,end) 900ms infinite;      
+  animation: ellipsis steps(4,end) 900ms infinite;
+  content: "\2026"; /* ascii code for the ellipsis character */
+  width: 0px;
+}
+
+@keyframes ellipsis {
+  to {
+    width: 1.25em;    
+  }
+}
+
+@-webkit-keyframes ellipsis {
+  to {
+    width: 1.25em;    
+  }
+}
