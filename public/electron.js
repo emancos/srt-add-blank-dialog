@@ -257,7 +257,7 @@ async function addBlankDialog(srt) {
   }
 
   for (const [i, dialogs] of srt.entries()) {
-    await delay(10)
+    await delay(8)
     await mainWindow.webContents.send('srt-processing', parseInt(i+1))    
     if (srt[i + 1]) {
       soma = getTimeInterval(srt[i], srt[i + 1])
